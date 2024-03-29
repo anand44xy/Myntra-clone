@@ -1,0 +1,1048 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: "Assistant", sans-serif;
+    font-size: 16px;
+    color: #94969f;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+a{
+    text-decoration: none;
+    color: #282c3f;
+}
+body{
+    width: 100%;
+    /* overflow-x: hidden; */
+    font-family: "Assistant", sans-serif;
+    
+}
+
+/* HEADER SECTION STARTS HERE */
+header {
+    width: 100%;
+    height: 80px;
+    position: sticky;
+    z-index: 10;
+    top: 0;
+    background-color: #fff;
+    box-shadow: 0 4px 12px 0 rgba(0,0,0,.05);
+    display: flex;
+}
+
+/* Myntra logo */
+.myntra-logo-container{
+    width: 53px;
+    height: 80px;
+    margin-left: 4%;
+}
+.MyntraWebSprite-logo{
+    width: 53px;
+    height: 36px;
+    display: inline-block;
+    margin-top: 22px;
+    cursor: pointer;
+    background: url(Images/MyntraWebSprite_27_01_2021.png) no-repeat;
+    background-size: 1404px 105px;
+    background-position: -462px 0;
+}
+
+/* nav SECTION */
+nav {
+    width: 515px;
+    line-height: 80px;
+    height: 80px;
+    margin-left: 13px;
+    display: block;
+    float: left;
+    display: flex;
+    justify-content: space-around;
+    z-index: 10;
+}
+.nav-items>a{
+    color: #282c3f;
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: .3px;
+    background-color: transparent;
+}
+
+.nav-items {
+    position: relative;
+}
+
+
+.nav-items a sup {
+    color: #ff3f6c;
+    top: -0.4rem;
+    font-size: 10px;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;    
+}
+
+/* hover for menu items */
+nav #nav-men:hover{
+    border-bottom: 3px solid #ee5f73;
+}
+nav #nav-women:hover{
+    border-bottom: 3px solid #fb56c1;
+}
+nav #nav-kids:hover{
+    border-bottom: 3px solid #f26a10;
+}
+nav #nav-homeAndLiving:hover{
+    border-bottom: 3px solid #f2c210;
+}
+nav #nav-beauty:hover{
+    border-bottom: 3px solid #0db7af;
+}
+nav #nav-studio:hover{
+    border-bottom: 3px solid #c97186;
+}
+
+/* MEGA MENU-MEN(#nav-men) */
+.mega-menu{
+    position: absolute;
+    left: -60px;
+    top: 80px;
+    z-index: 7;
+    opacity: 0;
+    visibility: hidden;
+    transition: 400ms;
+    width: 1170px;
+    height: 500px;
+    display: flex;
+    justify-content: flex-start;
+    background-color: #fcfafa;
+    box-shadow:rgba(0, 0, 0, 0.5);
+    font-size: 14px;
+    line-height: 28px;
+    color:#282c3f; 
+}
+
+.overlay{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+   transition: 400ms;
+   opacity: 0;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+}
+
+.nav-items:hover .mega-menu {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* overlay */
+.nav-items:hover .overlay {
+    opacity: 1;
+
+}
+
+
+.mega-menu ul li:hover{
+    font-weight: 700;
+}
+
+/* mColumn-01 */
+.mega-menu h2 a{
+    color: #ee5f73;
+    font-size: 16px;
+}
+.mc-hr{
+    width: 140px;
+    padding:5px;
+    flex-grow: 1;
+    border-top: 1px solid #eaeaec;
+}
+.mColumn-01{
+    width: 234px;
+    height: 100%; 
+    padding: 16px;
+    padding-left: 45px; 
+    background-color: #ffffff; 
+}
+.mColumn-02{
+    width: 234px;
+    height: 100%; 
+    padding: 17px;  
+}
+.mColumn-03{
+    width: 234px;
+    height: 100%; 
+    padding: 17px;
+    background-color: #ffffff;  
+}
+.mColumn-04{
+    width: 234px;
+    height: 100%; 
+    padding: 17px;  
+}
+.mColumn-05{
+    width: 234px;
+    height: 100%; 
+    padding: 17px; 
+    background-color: #ffffff; 
+}
+
+/* menga-menu-studio */
+.mega-menu-studio{
+    position: absolute;
+    left: -170px;
+    top: 80px;
+    opacity: 0;
+    visibility: hidden;
+    width: 580px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    background-color: #fcfafa;;
+    justify-content:flex-start;
+    align-items: center;
+    padding: auto;
+}
+.mms-studio-logo{
+    width: 70px;
+    height: 40px;
+    padding: auto;
+}
+.mms-text{
+    width: 350px;
+    height: 50px;
+    padding: auto;
+    font-size: 20px;
+    font-weight: 300;
+
+}
+.mms-img img{
+    width: 560;
+    height: 270px;
+    margin-top:40px ;
+}
+#nav-studio:hover .mega-menu-studio{
+    opacity: 1;
+    visibility: visible;
+}
+
+
+
+
+
+
+
+/* Search Box */
+.nav-search-box{
+    width: 335px;
+    margin: 20px 8px 20px 130px ;
+    background-color: #f5f5f6;
+    display: flex;
+    gap: 30px;
+    padding: 15px;
+    border-radius: 2%;
+}
+
+.nav-search-box input{
+    background-color: transparent;
+    border: none;
+    outline: 0;
+    flex-grow: 1;
+    display: inline-block;
+    font-size: 14px;
+    line-height: 24px;
+    color: #696e79;
+    box-sizing: content-box;
+    border-left: 0;
+    background:f5f5f6 ;       
+}
+
+/* Profile WishList Bag */
+.nav-actionBar{
+    width: 140px;
+    height: 40px;
+    margin: 20px 0px 0px 30px;
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    cursor: pointer;
+    align-items: center;
+}
+.nav-actionBar span{
+    color: black;
+    font-size: 12px;
+    font-weight: 700;
+}
+.nav-actionBar i{
+    color: black;
+    font-weight: 400;
+}
+/* HEADER SECTION ENDS HERE */
+
+/* MAIN SECTION STARTS HERE */
+main{
+    overflow: hidden;
+    height: auto;
+}
+
+.notification-bell{
+    position: fixed;
+    right: 23px;
+    bottom: 85px;
+    z-index: 8;
+    background-color: rgb(29, 133, 252);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.notification-bell i{
+    color: white;
+    box-sizing:border-box;
+    padding: 10px;
+    font-size: 30px;
+    /* z-index: 7; */
+}
+/* free shipping offer banner */
+.flat200Off{
+    position: fixed;
+    right: 0px;
+    bottom: 21%;
+    z-index: 8;
+    width: 44px;
+    height: 288px;
+    background-color: #535766;
+    color: white;
+    cursor: pointer;
+    letter-spacing: 2px;
+}
+.flat200Off-sidebar-content{
+    writing-mode: vertical-rl;
+    width: 36px;
+    padding: 4px;
+    margin-top: 40px;
+    height: 200px;
+    text-align: center;
+    color:#fcfcfc;
+    font-size: 24px;
+    font-weight: 700;
+    vertical-align: middle;
+    /* margin-block-end: 0;
+    margin-block-start: 0; */
+    display: inline-block;
+    transform: rotate(-180deg)
+}
+.newBanner{
+    position: fixed;
+    right: 1%;
+    bottom: 19%;
+    z-index: 9;
+    width: 40px;
+    height: 20px;
+    padding: 2px 4px;
+    border-radius: 2px;
+    background: rgba(255, 179, 0, 1);
+    color: #FFF;
+    text-align: center;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 0.4px;
+
+}
+
+
+.top-offerImg-img-1 img{
+    height: 206px;
+    width: 100%;
+    margin-top: 43px;
+}
+
+/* top-mid-img-2 */
+.top-mid-img-2{
+    width: 100%;
+    height: 400px;
+    display: flex;
+}
+.top-mid-img-2-left{
+   width: 674px;
+   height: inherit;
+}
+.top-mid-img-2-right{
+   width: 674px;
+   height: inherit;
+}
+.top-mid-img-2-left img{
+    width: 674px;
+    height: inherit;    
+}
+.top-mid-img-2-right img{
+    width: 674px;
+    height: inherit; 
+}
+
+/* top-mid-img-3 */
+.top-mid-img-3{
+    width: 1349px;
+    height: 105px;
+}
+.top-mid-img-3 img{
+    width: 1349px;
+    height: 105px;
+}
+
+/* top-mid-img-4 */
+.top-mid-img-4{
+    width: 1349px;
+    height: 105px;
+}
+.top-mid-img-4 img{
+    width: inherit;
+    height: inherit;
+}
+
+/* top-mid-img-5 */
+.top-mid-img-5{
+    width: 100%;
+    height: 140px;
+    display: flex;
+}
+.top-mid-img-5-left{
+   width: 674px;
+   height: inherit;
+}
+.top-mid-img-5-right{
+   width: 674px;
+   height: inherit;
+}
+.top-mid-img-5-left img{
+    width: 674px;
+    height: inherit;    
+}
+.top-mid-img-5-right img{
+    width: 674px;
+    height: inherit; 
+}
+
+/* top-mid-img-6 */
+.top-mid-img-6{
+    width: 100%j;
+    height: 140px;
+}
+.top-mid-img-6 img{
+    width: 1349;
+    height: 140px;
+}
+
+/* mid image container img-7 */
+.mid-image-container{
+    width: 100%;
+    height: 294px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+}
+.mid-image-container img{
+    width: 224px;
+    height: 294px;
+}
+
+/* mid-img-8 */
+.mid-img-8{
+    width: 1353px;
+    height: 96px;
+}
+.mid-img-8 img{
+    width: 1350px;
+    height:96px ;
+}
+
+/* mid-section-img-contaner-1 */
+.mid-section-img-contaner-1{
+    width: 1226px;
+    height: 267px;
+    display: flex;
+}
+.mid-section-img-contaner-1 img{
+    width: 225px;
+    height: 267px;
+}
+
+
+/* mid-section-img-contaner-2 */
+.mid-section-img-contaner-2{
+    width: 1226px;
+    height: 267px;
+    display: flex;
+}
+.mid-section-img-contaner-2 img{
+    width: 225px;
+    height: 267px;
+}
+
+/* mid-section-img-contaner-3 */
+.mid-section-img-contaner-3{
+    width: 1226px;
+    height: 267px;
+    display: flex;
+}
+.mid-section-img-contaner-3 img{
+    width: 225px;
+    height: 267px;
+}
+
+/* mid-section-img-contaner-4 */
+.mid-section-img-contaner-4{
+    width: 1226px;
+    height: 267px;
+    display: flex;
+    justify-content: center;
+}
+.mid-section-img-contaner-4 img{
+    width: 270px;
+    height: 267px;
+}
+
+/* bottom-img-above-Footer */
+.bottom-img-above-Footer{
+    width: 1349px;
+    height: 246px;
+}
+.bottom-img-above-Footer img{
+    width: 1349px;
+    height: 246px;
+}
+/* MAIN SECTION ENDS HERE */
+
+/*FOOTER SECTION STARTS HERE*/
+footer{
+    margin: auto;
+    height: auto;
+    padding: 30px 0px 40px;
+    background: #FAFBFC;
+    margin-top: 40px;
+    padding: 30px 0px 40px;
+    overflow: hidden;
+}
+.footer-gyanContainer{
+    width: 1080px;
+    /* height: auto; */
+    margin: auto;
+}
+.footer-GenericInfo{
+    width: 1080px;
+    height: 425px;
+    margin: auto;
+    margin-bottom:24px;
+    overflow: hidden;
+}
+.footer-shopLinks{
+    width: 155px;
+    /* height: inherit; */
+    padding-right: 20px;
+    float: left;
+}
+
+.gInfoTitle-links{
+    color: #696b79;
+    font-size: 15px;
+    text-decoration: none;
+    padding-bottom: 5px;
+    /* line-height: normal; */
+    cursor: pointer;    
+}
+.footer-GenericInfo p{
+    font-weight: 700;
+    color: #282c3f;
+    font-size: 12px;
+}
+
+/* CUSTOMER POLICIES */
+.footer-customerPolicies{
+    width: 15%;
+    float: left;
+}
+
+/* APP EXPERIENCE SECTION*/
+.footer-appExperience{
+    width: 360px;
+    float: left;
+
+}
+.downloadLink-container{
+    width: 282px;
+    height: 47px;
+    /* display: inline-block; */
+    margin-top: 20px;
+    cursor: pointer;
+
+}
+.downloadLink-container img{
+    width: 140px;
+    height: 42px;
+    float: left;
+    margin-right: 10px;
+
+}
+.downloadLink-container img{
+    width: 123px;
+    height: 42px;
+    margin-right: 10px;
+}
+.keepInTouch{
+    font-size: 12px;
+    font-weight: 700;
+    margin: 20px 0px 10px;
+}
+
+.socialMedia-container{
+    width: 180px;
+    height: 25px;
+    cursor: pointer;
+}
+
+/* PROMISES SECTION */
+.footer-promises{
+    width: 400px;
+    height: 300px;
+    /* float: right; */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-start;
+    padding-left: 250px;
+}
+.pSection1{
+    margin: 15px 0px 30px;
+    color: #696b79;
+    display: flex;
+    gap: 10px;
+    
+}
+.pSection2{
+    margin: 15px 37px 30px;
+    color: #696b79;
+    display: flex;
+    gap: 10px;
+    
+}
+
+/* POPULAR SEARCH */
+.popularSearch{
+    width: 1080px;
+    height: 30px;
+    display: flex;
+}
+.ps-hr{
+    margin: 5px 0px 0px 18px;
+    padding: 15px 0px; 
+    flex-grow: 1;
+    border-top: 1px solid #eaeaec;
+    
+
+}
+.pTital p{
+    font-weight: 700;
+    color: #282c3f;
+    font-size: 12px;
+}
+.pSearchLinks{
+    width: 1080px;
+    height: 100px;
+    margin-top: 10px;
+    color: #696b79;
+    font-size: 15px;
+    line-height: 25px;
+}
+
+.fInfoSection{
+    width: 1080px;
+    display: flex;
+    margin-top: 40px;
+    
+}
+.contact{
+     color: #94969f;;
+}
+.contact a{
+    font-size: 16px;
+    font-weight: 700;
+    color: #526cd0;
+}
+.copywrite{
+    margin-left: 100px;
+    font-size: 16px;
+    color: #94969f;
+}
+.flipkart-company a{
+    margin-left: 200px;
+    font-size: 16px;
+    color: #94969f;  
+}
+/* Registered Office Address */
+.addressContainer{
+    width: 100%;
+    height: 201px;
+    padding: 20px 0px;
+    margin: 30px 0px;
+    font-size: 15px;
+    border-top: 1px solid #eaeaec;
+    border-bottom: 1px solid #eaeaec;
+}
+.acHeader{
+    color: #282c3f;
+    font-weight: 700;
+    /* height: 21; */
+    margin: 20px 0px;
+}
+.aInfo-container{
+    width: 100%;
+    margin-top: 10px;
+    /* display: inline-block; */
+    /* height: 120px; */
+}
+.IcAddress-1{
+    width: 756px;
+}
+.IcAddress-2{
+    width: 324px;
+    /* height: 40px; */
+    padding-top: 80px;
+}
+.aInfo-container{
+    display: flex;
+}
+/* FOOTER SECTION ENDS HERE */
+
+
+
+
+/*=========CSS FOR 'MEN' SECTION STARTS HERE==========*/
+.M-top-mid-img-2 img{
+    height: 400px;
+    width: 100%;
+}
+.M-top-mid-img-2{
+    height: 400px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+/* M-mid-section-img-contaner-8 */
+.M-mid-section-img-contaner-8{
+  height: 1349px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+}
+
+/* M-mid-section-img-contaner-9 */
+.M-mid-section-imgs-row-1{
+    width: 100%;
+    height: 293px;
+    display: flex;
+}
+.M-mid-section-imgs-row-2{
+    width: 100%;
+    height: 293px;
+    display: flex;
+}
+
+.M-mid-section-img-contaner-9 img{
+    width: 1349px;
+    height: 292px;
+}
+.M-mid-section-img-contaner-8,
+.M-mid-section-imgs-row-2 {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/*=========CSS FOR 'WOMEN' SECTION STARTS HERE==========*/
+.W-top-mid-img-2 img{
+    height: 400px;
+    width: 100%;
+}
+.W-top-mid-img-2{
+    height: 400px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+/*  mid image container imgs-7 */
+.W-mid-image-container{
+    width: 100%;
+    height: 253px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+}
+.W-mid-image-container img{
+    width: 192px;
+    height: 253px;
+    /* flex-shrink: 1; */
+}
+
+/*mid-section-img-contaner-8  */
+.W-mid-section-imgs-row-1{
+    width: 100%;
+    height: 294px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+.W-mid-section-imgs-row-2{
+    width: 100%;
+    height: 352px;
+    margin: 0 auto;
+    display: flex;
+    justify-content:center ;
+}
+
+/* mid-section-img-contaner-9 */
+.W-mid-section-img-contaner-9{
+    width: 100%;
+    height: 489px;
+    margin: 0 auto;
+    display: flex;
+    justify-content:center ;
+}
+
+
+/*=========CSS FOR 'HOME & LIVING' SECTION STARTS HERE==========*/
+
+/* topBanner */
+.topBanner{
+    width: 100%;
+    height: 322px;
+    /* display: flex;
+    margin: 0 auto; */
+    padding: 0px 60px;
+    /* margin-top: 105px; */
+}
+.topBanner img{
+    width: 1229px;
+    height: 322px;
+}
+
+/* mid-Container */
+.midContainer{
+    width: 1349px;
+    height: 1397px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    /* align-items: stretch;
+    align-content: stretch; */
+    /* background-color: #696b79; */
+}
+
+.mC-right{
+    width: 385px;
+    height: 100%;
+    /* display: flex; */
+    padding-left: 20px;
+    box-sizing: border-box;
+    /* position: relative; */
+    overflow: hidden;
+    background-repeat: no-repeat;
+}
+
+/* mC-right(Hover-Underline) */
+.mC-right a:hover{
+    text-decoration: underline;
+}
+.navLink-mC-right{
+    width: 100%;
+    height: 51px;
+    padding: 10px 0px 1px 20px;
+}
+.navLink-mC-right a{
+    padding: 15px 0px;
+    cursor: text;
+}
+
+.mC-right-navLinks{
+    padding: 4px 0px 2px 20px ;
+}
+
+
+.mC-right-navLinks a{
+    font-weight: 500;
+    font-size: 15px;
+    color: #3e4152;
+    text-decoration: none
+    cur
+}
+.mC-right a{
+    font-weight: 500;
+    font-size: 15px;
+    color: #3e4152;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.mC-left{
+    width: 963px;
+    height: 100%;
+    /* display: flex; */
+    padding-left: 60px;
+    box-sizing: border-box;
+    /* position: relative; */
+    overflow: hidden;
+    background-repeat: no-repeat;
+}
+.textBannerTitle{
+    /* max-height: 5em; */
+    height: 37px;
+    width: 100%;
+    color: #3e4152;
+    font-weight: 700;
+    font-size: 1.8em;
+    margin: 50px 0px 60px 30px;
+    text-overflow: ellipsis;
+    letter-spacing: .15em;
+    display: inline-block;
+    
+    
+}
+.containerBox-1{
+    width: 903px;
+    height: 416px;
+    display: flex;
+    box-sizing:inherit;
+    flex-shrink: 1;
+    transition: all .3s ease-in-out;
+}
+.containerBox-1 img:hover{
+    width: 450px;
+    height: 348px;
+    /* transform: scale(2); */
+}
+
+.cB-img-01 img{
+    width: 443px;
+    height: 346px;
+    padding-right: 8px;
+    flex-shrink: 1;
+  
+}
+.cB-img-02 img{
+    width: 443px;
+    height: 346px;
+    flex-shrink: 1;
+}
+
+/* Get Inspired Banner */
+.getInspired-banner{
+    width: 100%;
+    height: 182px;
+}
+.gIb-img img{
+    width: 1349px;
+    height: 181px;
+}
+
+/* baseConatainer-01 */
+.baseConatainer-01{
+    width: 100%;
+    height: 495px;
+    background: rgb(239, 237, 237);
+    /* padding: 0px 60px; */
+    padding-left: 60px;
+    padding-right: 60px;
+    display: flex;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    transition: all .3s ease-in-out;
+}
+/* baseConatiner-01 hover & transition */
+.baseConatainer-01 img:hover{
+    width: 480px;
+    height: 500px;
+}
+.bC-img-01 img{
+    width: 401px;
+    height: 425px;
+    padding-right: 8px;
+}
+.bC-img-02 img{
+    width: 401px;
+    height: 425px;
+    padding-right: 8px;
+}
+.bC-img-03 img{
+    width: 401px;
+    height: 425px;
+}
+
+/* baseConatainer-02 */
+.baseConatainer-02{
+    width: 100%;
+    height: 164px;
+    padding-left: 60px;
+    margin:0 auto;
+}
+.bC-img img{
+    width: 1289px;
+    height:auto;
+    position: absolute;
+}
+
+/* baseConatainer-03 */
+.baseConatainer-03{
+    width: 100%;
+    height: 223px;
+    padding-left: 60px;
+    display: flex;
+    
+}
+/* baseConatiner-03 hover & transition */
+.baseConatainer-03 img:hover{
+    width: 238px;
+    height: 154px;
+}
+.bC-imgs-03-01 img{
+    width: 237px;
+    height: 153px;
+    padding-right: 8px;
+}
+.bC-imgs-03-02 img{
+    width: 237px;
+    height: 153px;
+    padding-right: 8px;
+}
+.bC-imgs-03-03 img{
+    width: 237px;
+    height: 99px;
+    padding-right: 8px;
+}
+.bC-imgs-03-04 img{
+    width: 237px;
+    height: 153px;
+    padding-right: 8px;
+}
+.bC-imgs-03-05 img{
+    width: 237px;
+    height: 143px;
+}
+/*=========CSS FOR 'HOME & LIVING' SECTION ENDS HERE==========*/
+
+
+
+
+
+
+
+
+
+
+
+
