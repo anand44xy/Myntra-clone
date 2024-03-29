@@ -1,6 +1,6 @@
 # Myntra Clone
 
-![Myntra Clone](https://github.com/anand44xy/Myntra-clone/blob/main/Images/Screenshot%20(42).png)
+![Myntra Clone](https://github.com/anand44xy/Myntra-clone/blob/main/Images/Screenshot%20(44).png)
 
 ## Description
 This project is a clone of the popular e-commerce platform Myntra. It replicates the main functionalities of Myntra including browsing products, adding them to cart, and checking out. Additionally, it features a mega menu and hover effects for enhanced user experience.
